@@ -186,3 +186,8 @@ html,body{overflow-x:clip}
 .hero-inner>*{min-width:0}
 .stats{width:auto;display:inline-grid;grid-template-columns:repeat(3,auto)}
 .marquee{margin:1.6rem 0;width:104%;margin-left:-2%}
+/* ronda 2: aviso de cookies alineado con la columna del pie */
+.foot>.ck-foot{max-width:1180px;margin:.6rem auto 0;padding:0 20px}
+/* ronda 2: cifras del hero legibles en móvil (12 px) */
+@media (max-width:420px){.stats span{font-size:.75rem;letter-spacing:.04em}}
+.skip{display:inline-flex;align-items:center;min-height:44px}
