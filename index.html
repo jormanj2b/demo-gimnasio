@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forja Entrenamiento · Tu primera semana gratis en Houston</title>
+<meta name="description" content="Entrenamiento funcional en grupos de 12 personas como máximo, en español y en inglés. Prueba una semana gratis en Forja, en el East End de Houston. Demo de portafolio.">
+<link rel="canonical" href="https://jormanj2b.github.io/demo-gimnasio/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0F0F0E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Forja · Tu primera semana gratis">
+<meta property="og:description" content="Entrenamiento funcional en grupos pequeños, en español. Houston, TX.">
+<meta property="og:url" content="https://jormanj2b.github.io/demo-gimnasio/">
+<meta property="og:image" content="https://jormanj2b.github.io/demo-gimnasio/img/og.jpg">
+<meta property="og:locale" content="es_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/anton-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-normal-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-800.webp" imagesrcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ExerciseGym","name":"Forja Entrenamiento","description":"Entrenamiento funcional en grupos pequeños, en español y en inglés. Negocio ficticio de demostración.","url":"https://jormanj2b.github.io/demo-gimnasio/","image":"https://jormanj2b.github.io/demo-gimnasio/img/og.jpg","priceRange":"$69 – $129 al mes","address":{"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","postalCode":"77011","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"05:30","closes":"20:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"12:00"}],"makesOffer":{"@type":"Offer","name":"Semana de prueba gratis","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#prueba">Saltar al formulario</a>
+<div class="demo-bar">Landing de demostración: gimnasio ficticio. Hecha por <a href="https://jormanj2b.github.io/">Jorman Bravo · Desarrollo web</a></div>
+<header class="top">
+  <a class="logo" href="#"><span aria-hidden="true">▲</span> FORJA</a>
+  <a class="btn btn-small" href="#prueba">Semana gratis</a>
+</header>
+<main>
+<section class="hero">
+  <img class="hero-bg" src="img/hero-800.webp" srcset="img/hero-400.webp 400w, img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="900" alt="" fetchpriority="high">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="tag">East End · Houston, TX</p>
+      <h1>Tu primera semana en Forja es gratis.</h1>
+      <p class="lead">Clases de 50 minutos con 12 personas como máximo y un coach que te corrige por tu nombre. En español, en inglés o en los dos.</p>
+      <ul class="checks">
+        <li>Sin tarjeta y sin contrato</li>
+        <li>Clases desde las 5:30 a. m.</li>
+        <li>Para cualquier nivel, también si nunca has entrenado</li>
+      </ul>
+    </div>
+    <div class="form-card" id="prueba">
+      <form id="lead" novalidate>
+        <h2>Reserva tu semana</h2>
+        <p class="form-sub">Te escribimos hoy para elegir tu primera clase.</p>
+        <div class="f"><label for="nombre">Nombre</label><input id="nombre" autocomplete="given-name" maxlength="60"><p class="error" id="err-nombre" hidden></p></div>
+        <div class="f"><label for="tel">Celular (WhatsApp)</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="(713) 555-0123"><p class="error" id="err-tel" hidden></p></div>
+        <div class="f"><label for="objetivo">Tu objetivo</label>
+          <select id="objetivo"><option value="">Elige uno</option><option>Bajar de peso</option><option>Ganar fuerza</option><option>Volver a entrenar después de una lesión</option><option>Tener energía y moverme mejor</option></select>
+          <p class="error" id="err-objetivo" hidden></p></div>
+        <fieldset class="f hor"><legend>¿A qué hora puedes venir?</legend>
+          <label><input type="radio" name="hora" value="Mañana (5:30–9:00)" checked> Mañana</label>
+          <label><input type="radio" name="hora" value="Mediodía (12:00)"> Mediodía</label>
+          <label><input type="radio" name="hora" value="Tarde (17:30–19:30)"> Tarde</label>
+        </fieldset>
+        <button class="btn btn-block" type="submit">Quiero mi semana gratis</button>
+        <p class="fine">Demo: los datos no se envían. Usamos tu número solo para coordinar la clase.</p>
+      </form>
+      <div class="thanks" id="thanks" hidden tabindex="-1">
+        <p class="tag">Listo</p>
+        <h2 id="t-title">¡Nos vemos pronto!</h2>
+        <p id="t-text"></p>
+        <ol class="next"><li>Te escribimos por WhatsApp en menos de 2 horas.</li><li>Eliges tu primera clase.</li><li>Llegas 10 minutos antes con agua y tenis.</li></ol>
+        <a class="btn btn-ghost" id="t-wa" href="#" target="_blank" rel="noopener">Escribir ahora por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="h-big">Qué pasa en tu semana de prueba</h2>
+    <ol class="steps">
+      <li><span class="num">01</span><h3>Evaluación de 15 minutos</h3><p>Medimos movilidad y fuerza básica, y hablamos de lesiones. Con eso el coach adapta cada ejercicio.</p></li>
+      <li><span class="num">02</span><h3>Hasta 5 clases</h3><p>Entra a las que quieras. Cada clase tiene calentamiento, fuerza y un bloque final corto e intenso.</p></li>
+      <li><span class="num">03</span><h3>Decides sin presión</h3><p>El viernes te enseñamos los planes. Si no es para ti, no pasa nada: no te pedimos tarjeta.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-img">
+  <div class="wrap split">
+    <img src="img/clase-800.webp" srcset="img/clase-400.webp 400w, img/clase-800.webp 800w, img/clase-1600.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" width="1600" height="1200" loading="lazy" alt="Grupo de adultos de varias edades en remo y step con un coach dando indicaciones">
+    <div>
+      <h2 class="h-big">Grupos pequeños, de todas las edades</h2>
+      <p>La mitad de nuestra gente tiene más de 40 años. Muchos llegaron sin haber pisado un gimnasio. Por eso las clases tienen un máximo de 12 personas y cada ejercicio tiene una versión más fácil.</p>
+      <table class="sched">
+        <caption>Horario de clases</caption>
+        <thead><tr><th scope="col">Hora</th><th scope="col">Lun–Vie</th><th scope="col">Sáb</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">5:30 a. m.</th><td>Fuerza</td><td>—</td></tr>
+          <tr><th scope="row">7:00 a. m.</th><td>Funcional</td><td>Funcional</td></tr>
+          <tr><th scope="row">9:00 a. m.</th><td>Movilidad 40+</td><td>Equipos</td></tr>
+          <tr><th scope="row">12:00 p. m.</th><td>Express 30 min</td><td>—</td></tr>
+          <tr><th scope="row">5:30 p. m.</th><td>Funcional</td><td>—</td></tr>
+          <tr><th scope="row">7:30 p. m.</th><td>Fuerza</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section coach">
+  <div class="wrap split split-rev">
+    <img src="img/coach-800.webp" srcset="img/coach-400.webp 400w, img/coach-800.webp 800w, img/coach-1600.webp 1600w" sizes="(min-width: 900px) 45vw, 100vw" width="1600" height="1200" loading="lazy" alt="Rafael Ibarra, coach principal de Forja, con camiseta gris y silbato">
+    <div>
+      <p class="tag">Coach principal</p>
+      <h2 class="h-big">Rafael Ibarra</h2>
+      <blockquote><p>«Mi trabajo es que vuelvas el jueves. Por eso empezamos con pesos que puedas mover bien, y subimos cuando tu cuerpo está listo».</p></blockquote>
+      <p class="fine-light">Persona ficticia creada para esta demostración.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="h-big">Planes después de la prueba</h2>
+    <div class="plans">
+      <article class="plan"><h3>2 días</h3><p class="price">$69<span>/mes</span></p><p>8 clases al mes. Para empezar con calma.</p></article>
+      <article class="plan plan-main"><p class="badge">El más elegido</p><h3>Ilimitado</h3><p class="price">$109<span>/mes</span></p><p>Todas las clases que quieras y una evaluación cada 8 semanas.</p></article>
+      <article class="plan"><h3>Pareja</h3><p class="price">$129<span>/mes</span></p><p>Ilimitado para dos personas que viven en la misma casa.</p></article>
+    </div>
+    <p class="fine-dark">Sin matrícula. Cancelas con 30 días de aviso.</p>
+  </div>
+</section>
+
+<section class="section faq">
+  <div class="wrap narrow">
+    <h2 class="h-big">Preguntas</h2>
+    <details><summary>Nunca he entrenado. ¿Puedo ir?</summary><p>Sí. La evaluación existe justo para eso, y el coach te da una versión de cada ejercicio para tu nivel.</p></details>
+    <details><summary>¿Hay estacionamiento?</summary><p>Sí, gratis, frente al local. Hay espacio para unas 15 camionetas.</p></details>
+    <details><summary>¿Las clases son en español?</summary><p>Las damos en los dos idiomas a la vez. Si prefieres uno, dile a tu coach.</p></details>
+    <details><summary>¿Qué tengo que llevar?</summary><p>Ropa cómoda, tenis y una botella de agua. Toallas y casilleros los ponemos nosotros.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="h-big">Ven a probar. La primera semana va por nuestra cuenta.</h2>
+    <a class="btn" href="#prueba">Reservar mi semana gratis</a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <p><strong>Forja Entrenamiento</strong> · Houston, TX 77011 (dirección ficticia)<br>Lun–Vie 5:30 a. m.–8:30 p. m. · Sáb 7:00 a. m.–12:00 p. m.</p>
+    <p><a href="privacidad.html">Privacidad</a> · Landing hecha por <a href="https://jormanj2b.github.io/">Jorman Bravo · Desarrollo web</a></p>
+  </div>
+</footer>
+<a class="sticky-cta btn" href="#prueba" id="sticky">Semana gratis</a>
+<script src="app.js" defer></script>
+</body>
+</html>
