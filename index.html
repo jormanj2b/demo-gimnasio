@@ -53,11 +53,11 @@
       <form id="lead" novalidate>
         <h2>Reserva tu semana</h2>
         <p class="form-sub">Te escribimos hoy para elegir tu primera clase.</p>
-        <div class="f"><label for="nombre">Nombre</label><input id="nombre" autocomplete="given-name" maxlength="60"><p class="error" id="err-nombre" hidden></p></div>
-        <div class="f"><label for="tel">Celular (WhatsApp)</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="(713) 555-0123"><p class="error" id="err-tel" hidden></p></div>
+        <div class="f"><label for="nombre">Nombre</label><input id="nombre" autocomplete="given-name" minlength="2" maxlength="60" pattern="\p{L}(?:[\p{L}\p{M}]|[' ’\-](?=\p{L}))*" spellcheck="false"><p class="error" id="err-nombre" aria-live="polite" hidden></p></div>
+        <div class="f"><label for="tel">Celular (WhatsApp)</label><input id="tel" type="tel" inputmode="tel" autocomplete="tel" maxlength="16" pattern="\+?[0-9]{10,15}" placeholder="7135550123"><p class="error" id="err-tel" aria-live="polite" hidden></p></div>
         <div class="f"><label for="objetivo">Tu objetivo</label>
           <select id="objetivo"><option value="">Elige uno</option><option>Bajar de peso</option><option>Ganar fuerza</option><option>Volver a entrenar después de una lesión</option><option>Tener energía y moverme mejor</option></select>
-          <p class="error" id="err-objetivo" hidden></p></div>
+          <p class="error" id="err-objetivo" aria-live="polite" hidden></p></div>
         <fieldset class="f hor"><legend>¿A qué hora puedes venir?</legend>
           <label><input type="radio" name="hora" value="Mañana (5:30–9:00)" checked> Mañana</label>
           <label><input type="radio" name="hora" value="Mediodía (12:00)"> Mediodía</label>
@@ -160,7 +160,7 @@
   </div>
 </footer>
 <a class="sticky-cta btn" href="#prueba" id="sticky">Semana gratis</a>
-<script src="app.js" defer></script>
+<script src="app.js?v=2" defer></script>
 <script src="reveal.js" defer></script>
 </body>
 </html>
