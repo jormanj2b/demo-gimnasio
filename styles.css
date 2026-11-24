@@ -94,3 +94,6 @@ input[aria-invalid="true"],select[aria-invalid="true"]{border-color:#B3261E}
 @media (min-width:860px){.sticky-cta{display:none}}
 .legal{max-width:760px;margin:0 auto;padding:7rem 20px 4rem}
 [tabindex="-1"]:focus{outline:none}
+
+/* img-placeholder */
+img:not([src$=".svg"]){background-color:var(--concrete)}
