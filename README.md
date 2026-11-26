@@ -2,9 +2,9 @@
 
 Landing de conversión para gimnasio: oferta de semana gratis, formulario de captación con validación, horario, planes y preguntas frecuentes.
 
-**Sitio en vivo:** https://jormanj2b.github.io/demo-gimnasio/
+**Sitio en vivo:** https://jormanbravo.com/demo-gimnasio/
 
-Forja Entrenamiento es un negocio **ficticio**. Este repositorio es una pieza de portafolio de **Jorman Bravo · Desarrollo web** ([portafolio](https://jormanj2b.github.io/)), no el sitio de una empresa real. Las direcciones, personas, precios y testimonios son de ejemplo, y las fotos están generadas para la demo.
+Forja Entrenamiento es un negocio **ficticio**. Este repositorio es una pieza de portafolio de **Jorman Bravo · Desarrollo web** ([portafolio](https://jormanbravo.com/)), no el sitio de una empresa real. Las direcciones, personas, precios y testimonios son de ejemplo, y las fotos están generadas para la demo.
 
 ## Qué incluye
 
@@ -22,4 +22,4 @@ GitHub Pages desde la rama `main`. Para un cliente real se conecta su dominio, s
 
 ## English version
 
-Native US English version at [/en/](https://jormanj2b.github.io/demo-gimnasio/en/) (Forge Training, Houston, TX), with an ES/EN toggle on every page.
+Native US English version at [/en/](https://jormanbravo.com/demo-gimnasio/en/) (Forge Training, Houston, TX), with an ES/EN toggle on every page.
