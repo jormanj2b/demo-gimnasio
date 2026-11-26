@@ -191,3 +191,8 @@ html,body{overflow-x:clip}
 /* ronda 2: cifras del hero legibles en móvil (12 px) */
 @media (max-width:420px){.stats span{font-size:.75rem;letter-spacing:.04em}}
 .skip{display:inline-flex;align-items:center;min-height:44px}
+
+/* ES/EN */
+.lang-switch{display:inline-block;margin-left:.6rem;padding:.15rem .7rem;border:1px solid currentColor;border-radius:999px;font-weight:600;text-decoration:none;line-height:1.5}
+.lang-switch:hover{text-decoration:underline}
+html[lang="en"] .form-card::before{content:"FREE PASS · 7 DAYS"}

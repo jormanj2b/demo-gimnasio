@@ -19,3 +19,7 @@ Forja Entrenamiento es un negocio **ficticio**. Este repositorio es una pieza de
 GitHub Pages desde la rama `main`. Para un cliente real se conecta su dominio, se cambian los datos de ejemplo y se añade el número de WhatsApp o el servicio de formularios que use el negocio.
 
 © 2026 Jorman Bravo. Código de muestra para portafolio.
+
+## English version
+
+Native US English version at [/en/](https://jormanj2b.github.io/demo-gimnasio/en/) (Forge Training, Houston, TX), with an ES/EN toggle on every page.
